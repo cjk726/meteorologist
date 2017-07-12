@@ -16,8 +16,6 @@ class ForecastController < ApplicationController
     # The longitude the user input is in the string @lng.
     # ==========================================================================
 
-        # 41.880634 lat
-        # -87.65145 lng
 
     url = "https://api.darksky.net/forecast/2108e94eb7053f5f01bacfc6e8d657b8/"+@lat+","+@lng
     parsed_data = JSON.parse(open(url).read)
