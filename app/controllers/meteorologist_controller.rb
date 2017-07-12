@@ -36,6 +36,7 @@ class MeteorologistController < ApplicationController
 
     @summary_of_next_several_days = darksky_parsed_data["daily"]["summary"]
 
+    # Comment added to create a new commit to test CircleCI testing/grading.
 
     render("meteorologist/street_to_weather.html.erb")
   end
